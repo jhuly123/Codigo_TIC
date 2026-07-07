@@ -1,0 +1,4 @@
+﻿modelo,acc_media,acc_std,acc_agregada,ci95_low,ci95_high
+A - sin preprocesamiento,0.4043,0.0792,0.4052,0.3307,0.4844
+B - pipeline completo,0.503,0.0817,0.5033,0.4249,0.5814
+MEJORA (B - A),0.0987,0.0563,0.098,,

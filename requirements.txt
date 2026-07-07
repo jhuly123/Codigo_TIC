@@ -1,0 +1,33 @@
+# LSEc — Reconocimiento de Lengua de Señas Ecuatoriana
+# ======================================================
+# Instalar: pip install -r requirements.txt
+#
+# Versiones probadas en Python 3.10.x / Windows 11 / CUDA 11.8 (opcional)
+# Para CPU solamente: reemplazar tensorflow con tensorflow-cpu
+
+# ── Deep learning ─────────────────────────────────────────────────────────────
+tensorflow==2.15.0          # modelo LSTM; usar tensorflow-cpu si no hay GPU
+# tensorflow-cpu==2.15.0   # alternativa sin GPU
+
+# ── Visión computacional y keypoints ─────────────────────────────────────────
+mediapipe==0.10.11          # extracción de keypoints (pose + manos)
+opencv-python==4.9.0.80     # captura de video, CFR check, demo webcam
+
+# ── Machine learning clásico ──────────────────────────────────────────────────
+scikit-learn==1.4.2         # SVM baseline, métricas, split estratificado
+
+# ── Procesamiento numérico y de datos ─────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.13.0               # interpolación temporal, McNemar's test
+
+# ── Visualización ─────────────────────────────────────────────────────────────
+matplotlib==3.9.0           # curvas de entrenamiento, matriz de confusión
+
+# ── HTTP ──────────────────────────────────────────────────────────────────────
+requests==2.31.0            # API de Label Studio (pipeline 02, 03, 04)
+
+# ── Anotación (solo para pipeline de etiquetado, no necesario para inferencia) ─
+# label-studio>=1.8.0       # instalar por separado con pip install label-studio
+# label-studio-ml>=1.0.9    # requerido por ml_backend/ (predicciones automáticas)
+# pympi-ling>=1.70          # requerido solo para leer anotaciones ELAN (.eaf)

@@ -1,0 +1,10 @@
+﻿seed,test_acc,val_acc_max,epocas,modelo_elegido
+42,0.343,0.4,12.0,False
+43,0.457,0.429,40.0,True
+44,0.457,0.4,30.0,False
+45,0.4,0.343,34.0,False
+46,0.514,0.371,32.0,False
+media (n=5),0.4342,0.3886,29.6,False
+std (n=5),0.065,0.0327,10.5,False
+min,0.343,0.343,12.0,False
+max,0.514,0.429,40.0,False

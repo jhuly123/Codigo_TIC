@@ -1,0 +1,35 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ── Entornos virtuales ────────────────────────────────────────────────────────
+venv/
+.venv/
+
+# ── Configuración local de herramientas ───────────────────────────────────────
+.claude/
+
+# ── Datos pesados / no distribuibles ─────────────────────────────────────────
+# Los videos pertenecen al proyecto PIEX-CEDIA-24-27 (ver README — Datos).
+# Los keypoints y datasets generados se obtienen del paquete de datos o
+# re-ejecutando pipeline/01 → 10.
+videos/
+keypoints/
+keypoints_aumentado_v2/
+dataset_final_v2/
+experimentos/exp3_tecnicas/keypoints_aug15/
+experimentos/exp3_tecnicas/dataset_aumentado_15tecnicas.csv
+
+# ── CSVs intermedios del pipeline ─────────────────────────────────────────────
+# Regenerables (pipeline/04 → 10) y contienen rutas absolutas de la máquina
+# local en la columna video_path; se distribuyen en el paquete de datos.
+datos/
+
+# ── Preferencias de usuario de ELAN (no son anotaciones) ─────────────────────
+*.pfsx
+
+# ── Salidas de ejecución local ────────────────────────────────────────────────
+demo_capturas/
+*.log
+*.csv.parcial
