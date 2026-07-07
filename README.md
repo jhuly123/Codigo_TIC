@@ -113,9 +113,9 @@ Keypoints: MediaPipe Holistic — pose (99) + mano izq. (63) + mano der. (63) = 
 
 | Herramienta | Videos etiquetados | Tiempo por video | Accuracy modelo final |
 |---|---|---|---|
-| Label Studio | 1 053 (automático) | ~6 h total | 48,6 % (top-5: 77,1 %) |
-| CVAT | 51 (manual) | ~2 min/video | 38,2 % (top-5: 50,0 %) |
-| ELAN | 35 (manual) | ~3 min/video | 26,5 % (top-5: 41,2 %) |
+| Label Studio | 1 053 (automático) | ~6 h total | 48,6 % |
+| CVAT | 51 (manual) | ~2 min/video | 38,2 %  |
+| ELAN | 35 (manual) | ~3 min/video | 26,5 %  |
 
 ---
 
