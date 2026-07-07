@@ -49,7 +49,7 @@ Componentes adicionales: **FFmpeg 6.x**, **Label Studio 1.12.0**, **Docker** (pa
 
 ## Ver resultados sin ejecutar
 
-Los notebooks ya contienen las salidas guardadas. Puedes explorarlos directamente en GitHub:
+Los notebooks ya contienen las salidas guardadas. 
 
 | Experimento | Notebook | Resultado clave |
 |---|---|---|
