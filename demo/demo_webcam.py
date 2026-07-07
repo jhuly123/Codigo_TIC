@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils.config import DATA_DIR, N_FRAMES, N_KEYPOINTS, CSV_TOP35
 from utils.preprocessing import normalizar_hombros, extraer_kp_frame
 
-MODELO_PATH = os.path.join(DATA_DIR, "modelo", "mejor_modelo_v2.keras")
+MODELO_PATH = os.path.join(DATA_DIR, "modelo", "resultados", "mejor_modelo_v2.keras")
 
 # Senas objetivo del modo guiado, ordenadas por precision real del modelo v2b
 # determinista (modelo/resultados/reporte_por_clase.csv). El numero es la

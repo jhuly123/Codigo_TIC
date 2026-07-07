@@ -21,7 +21,7 @@ Codigo_TIC/
 ├── utils/                  # Módulos reutilizables (config, augmentation, model...)
 ├── ml_backend/             # Backend MediaPipe para Label Studio
 ├── modelo/                 # Entrenamiento y evaluación del clasificador LSTM
-│   └── resultados/         # Métricas y figuras finales del modelo
+│   └── resultados/         # Modelos entrenados (.keras), métricas y figuras finales
 ├── demo/                   # Demo en tiempo real con webcam
 ├── experimentos/           # Un subdirectorio por experimento (notebook/script suelto + salidas/)
 │   ├── exp1_ab/            # A/B: datos crudos vs pipeline (5-Fold CV)
@@ -65,7 +65,7 @@ Los notebooks ya contienen las salidas guardadas.
 | Comparativa herramientas | `experimentos/exp4_herramientas/exp4_comparativa_herramientas.ipynb` | Label Studio ≈ CVAT > ELAN |
 | Modelo final | `modelo/modelo_final.ipynb` | CV robusta 50,3 % [42,5–58,1 %], test 48,6 %, 88 195 parámetros |
 
-> **Nota de reproducibilidad:** todos los notebooks de entrenamiento fuerzan determinismo real en CPU (`TF_ENABLE_ONEDNN_OPTS=0` + hilos intra/inter-op = 1, SEED=42), por lo que re-ejecutarlos reproduce estos números exactamente. El notebook `exp1_ab_pipeline.ipynb` conserva una metodología anterior (split único) y se incluye como registro histórico con sus salidas guardadas.
+> **Nota de reproducibilidad:** todos los notebooks de entrenamiento fuerzan determinismo en CPU (`TF_ENABLE_ONEDNN_OPTS=0` + hilos intra/inter-op = 1, SEED=42): ejecuciones repetidas en un mismo entorno producen resultados idénticos (verificado empíricamente). Los números aquí reportados corresponden a la corrida original; cambios en las versiones de librerías o del sistema operativo pueden desplazar ligeramente los valores absolutos sin alterar las conclusiones. El notebook `exp1_ab_pipeline.ipynb` conserva una metodología anterior (split único) y se incluye como registro histórico con sus salidas guardadas.
 
 ---
 
@@ -84,7 +84,7 @@ Seguir los scripts `pipeline/01` → `pipeline/10` en orden.
 Descargar el paquete de datos del link anterior (carpetas `datos/`, `keypoints/`, `keypoints_aumentado_v2/` y `dataset_final_v2/`) y ejecutar directamente los notebooks en `experimentos/`.
 
 ### Demo en tiempo real
-Con el modelo entrenado (`modelo/mejor_modelo_v2.keras`) y una webcam:
+Con el modelo entrenado (`modelo/resultados/mejor_modelo_v2.keras`) y una webcam:
 
 ```bash
 python demo/demo_webcam.py
@@ -114,8 +114,8 @@ Keypoints: MediaPipe Holistic — pose (99) + mano izq. (63) + mano der. (63) = 
 | Herramienta | Videos etiquetados | Tiempo por video | Accuracy modelo final |
 |---|---|---|---|
 | Label Studio | 1 053 (automático) | ~6 h total | 48,6 % (top-5: 77,1 %) |
-| CVAT | 51 (manual) | ~2 min/video | 35,3 % (top-5: 52,9 %) |
-| ELAN | 35 (manual) | ~3 min/video | 29,4 % (top-5: 44,1 %) |
+| CVAT | 51 (manual) | ~2 min/video | 38,2 % (top-5: 50,0 %) |
+| ELAN | 35 (manual) | ~3 min/video | 26,5 % (top-5: 41,2 %) |
 
 ---
 

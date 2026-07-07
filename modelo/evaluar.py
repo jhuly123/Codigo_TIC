@@ -1,7 +1,7 @@
 """
 modelo/evaluar.py
 ===================
-Evalúa el modelo final (modelo/mejor_modelo_v2.keras) sobre el test set fijo
+Evalúa el modelo final (modelo/resultados/mejor_modelo_v2.keras) sobre el test set fijo
 de Label Studio y sobre las herramientas comparativas (CVAT, ELAN), y genera
 los artefactos de modelo/resultados/:
 
@@ -14,7 +14,7 @@ los artefactos de modelo/resultados/:
 Reconstruido en 2026-07-05: el repo ya no tenía un script que regenerara estos
 archivos (la guía de ejecución mencionaba modelo/evaluar.py, pero no existía).
 
-No regenera comparativa_herramientas_v1_v2.csv (salida histórica de
+No regenera comparativa_herramientas_historico_produccion.csv (salida histórica de
 experimentos/exp4_herramientas/exp4_comparativa_herramientas.ipynb): ese
 comparaba contra experimentos/exp1_ab/salidas/modelo_B.h5, un artefacto de una
 estructura experimental anterior (split único) que el protocolo actual de
@@ -44,9 +44,8 @@ from utils.config import (DATA_DIR, N_FRAMES, N_KEYPOINTS, SPLIT_PATH,
 from utils.preprocessing import normalizar_hombros
 from utils.data_io import cargar_herramienta_comparativa
 
-MODELOS_DIR = os.path.join(DATA_DIR, "modelo")
-CHECKPOINT  = os.path.join(MODELOS_DIR, "mejor_modelo_v2.keras")
 SALIDA_DIR  = os.path.join(DATA_DIR, "modelo", "resultados")
+CHECKPOINT  = os.path.join(SALIDA_DIR, "mejor_modelo_v2.keras")
 os.makedirs(SALIDA_DIR, exist_ok=True)
 
 
