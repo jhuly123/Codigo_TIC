@@ -16,7 +16,7 @@ KP_AUG_DIR     = os.path.join(DATA_DIR, "keypoints_aumentado_v2")
 DATASET_V2_DIR = os.path.join(DATA_DIR, "dataset_final_v2")
 
 # Split fijo, compartido por todos los experimentos
-EXP_DIR    = os.path.join(DATA_DIR, "experimentos", "exp1_ab")
+EXP_DIR    = os.path.join(DATA_DIR, "experimentos", "exp1_ab", "salidas")
 SPLIT_PATH = os.path.join(EXP_DIR,  "split_fijo.npz")
 
 # CSVs del pipeline

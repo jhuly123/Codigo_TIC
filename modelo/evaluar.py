@@ -16,7 +16,7 @@ archivos (la guía de ejecución mencionaba modelo/evaluar.py, pero no existía)
 
 No regenera comparativa_herramientas_v1_v2.csv (salida histórica de
 experimentos/exp4_herramientas/exp4_comparativa_herramientas.ipynb): ese
-comparaba contra experimentos/exp1_ab/modelo_B.h5, un artefacto de una
+comparaba contra experimentos/exp1_ab/salidas/modelo_B.h5, un artefacto de una
 estructura experimental anterior (split único) que el protocolo actual de
 5-Fold CV ya no persiste. Reconstruirlo requeriría entrenar y guardar un
 modelo adicional, fuera del alcance de este script.

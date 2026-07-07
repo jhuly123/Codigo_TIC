@@ -23,12 +23,17 @@ Codigo_TIC/
 ├── modelo/                 # Entrenamiento y evaluación del clasificador LSTM
 │   └── resultados/         # Métricas y figuras finales del modelo
 ├── demo/                   # Demo en tiempo real con webcam
-├── experimentos/           # Un subdirectorio por experimento (notebook + resultados)
+├── experimentos/           # Un subdirectorio por experimento (notebook/script suelto + salidas/)
 │   ├── exp1_ab/            # A/B: datos crudos vs pipeline (5-Fold CV)
+│   │   └── salidas/        # CSVs, PNGs y split_fijo.npz generados
 │   ├── exp2_factorial/     # Diseño factorial 2×2 normalización × aumento
+│   │   └── salidas/
 │   ├── exp3_tecnicas/      # Comparativa de técnicas de aumento (v1/v2b/v2)
+│   │   └── salidas/
 │   ├── exp4_herramientas/  # Comparativa Label Studio / CVAT / ELAN
+│   │   └── salidas/
 │   └── exp_ablacion/       # Análisis incremental del pipeline (C0 → C2 → C3)
+│       └── salidas/
 ├── anotaciones/            # Archivos de etiquetado (Label Studio, CVAT, ELAN)
 └── datos/                  # CSVs intermedios del pipeline (no versionados)
 ```

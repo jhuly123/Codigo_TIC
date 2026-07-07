@@ -15,7 +15,7 @@ Las 15 técnicas:
   v2  (+3): very_slow (0.5×), very_fast (1.5×), frame_drop
 
 Prerequisito: 07_extraer_keypoints.py ejecutado (keypoints/label_studio/ poblado).
-Salida: experimentos/exp3_tecnicas/keypoints_aug15/ + dataset_aumentado_15tecnicas.csv
+Salida: experimentos/exp3_tecnicas/salidas/keypoints_aug15/ + dataset_aumentado_15tecnicas.csv
 """
 
 import os
@@ -27,8 +27,8 @@ from utils.config import DATA_DIR
 from utils.augmentation import TECNICAS_V2
 from utils.data_io import generar_dataset_aumentado
 
-SALIDA_DIR = os.path.join(DATA_DIR, "experimentos", "exp3_tecnicas", "keypoints_aug15")
-SALIDA_CSV = os.path.join(DATA_DIR, "experimentos", "exp3_tecnicas", "dataset_aumentado_15tecnicas.csv")
+SALIDA_DIR = os.path.join(DATA_DIR, "experimentos", "exp3_tecnicas", "salidas", "keypoints_aug15")
+SALIDA_CSV = os.path.join(DATA_DIR, "experimentos", "exp3_tecnicas", "salidas", "dataset_aumentado_15tecnicas.csv")
 
 
 def main():

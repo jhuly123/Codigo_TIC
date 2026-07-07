@@ -18,8 +18,8 @@ videos/
 keypoints/
 keypoints_aumentado_v2/
 dataset_final_v2/
-experimentos/exp3_tecnicas/keypoints_aug15/
-experimentos/exp3_tecnicas/dataset_aumentado_15tecnicas.csv
+experimentos/exp3_tecnicas/salidas/keypoints_aug15/
+experimentos/exp3_tecnicas/salidas/dataset_aumentado_15tecnicas.csv
 
 # ── CSVs intermedios del pipeline ─────────────────────────────────────────────
 # Regenerables (pipeline/04 → 10) y contienen rutas absolutas de la máquina
