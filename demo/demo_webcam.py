@@ -29,16 +29,16 @@ MODELO_PATH = os.path.join(DATA_DIR, "modelo", "resultados", "mejor_modelo_v2.ke
 # determinista (modelo/resultados/reporte_por_clase.csv). El numero es la
 # precision: cuando el modelo predice esta sena, que tan seguido acierta.
 SENAS_OBJETIVO = [
-    ("CORRECTO",    100),
     ("CRECER",      100),
-    ("ESCUCHAR",    100),
-    ("ACOMODAR",    100),
-    ("APROBAR",     100),
+    ("CUALQUIER",   100),
+    ("FAMOSO",      100),
+    ("JEFE",        100),
+    ("PASTEL",      100),
+    ("CORRECTO",     50),
+    ("ACOMODAR",     50),
+    ("APROBAR",      50),
+    ("ABAJO_2",      50),
     ("ENOJADO",      50),
-    ("ACCIDENTE",    50),
-    ("FAMOSO",       50),
-    ("MUDARSE",      33),
-    ("AVERGONZAR",   20),
 ]
 
 C_VERDE   = (80,  200,  80)
