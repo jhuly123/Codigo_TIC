@@ -1,0 +1,10 @@
+﻿herramienta,conjunto,accuracy,top5,n_videos
+Label Studio,mismos videos,0.5588,0.7353,34
+Label Studio,limpio (sin train),0.4815,0.6667,27
+Label Studio,solo test,0.5652,0.7391,23
+CVAT,mismos videos,0.3824,0.5,34
+CVAT,limpio (sin train),0.4074,0.5556,27
+CVAT,solo test,0.4783,0.6522,23
+ELAN,mismos videos,0.2647,0.4118,34
+ELAN,limpio (sin train),0.2963,0.4444,27
+ELAN,solo test,0.3478,0.4783,23
